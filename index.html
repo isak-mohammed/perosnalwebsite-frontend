@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Isak Mohammed</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+   <script src="js/modernizr.js"></script>
+   <script src="js/main.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Projects & Education</a></li>
+            
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Hi, I'm Isak</h1>
+            
+            <p>and this page has been viewed <a id="counter"></a> times :) </p> 
+            <ul class="social">
+               <li><a href="https://www.linkedin.com/in/isak-mohammed-10251211b/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/isak-mohammed"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://isakmohammed.hashnode.dev"><i class="fa fa-external-link"></i></a></li>
+               <li><a href="https://twitter.com/MOHAMMADISAK"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="images/me.png" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>ABOUT ME</h2>
+
+            <p> Hi, I'm Isak Mohammed, Skilled and motivated Cloud enthusiast, with over 14x years of client and project management experience looking for opportunities as a Cloud Engineer, Cloud Solution Architect or Junior DevOps Engineer. 
+               
+         </br>
+      </br>
+            
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+      <div class="row Projects">
+
+         <div class="three columns header-col">
+            <h1><span>Projects</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Created CICD pipeline using Jenkins, Nexus, SonarQube and Elastic Beanstalk environment on AWS</h3>
+                  <li>Integrated Jenkins with GitHub, Nexus, Sonarqube, slack and Elastic beanstalk Environment</li>
+                  <li>Used Maven to build Java Web application and Nexus server to host dependencies for Maven</li>
+                  <li>Created quality gates in SonarQube dashboard and enforced it in the pipeline to fail the builds when conditions were not met</li>
+                  <li>Once the code passed unit, Integration tests and SonarQube quality gates then well tested artifact with build version was stored in Nexus Repository</li>
+                  <li>Deployed tested artifact to staging Elastic Beanstalk environment, conducted performance tests on staging environment by adding Windows server as node to Jenkins server</li>
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Deployed serverless website with view counter on AWS and created CICD pipeline using GitHub actions</h3>
+                  <li>Hosted a responsive personal wesite in AWS using S3, CloudFront, Lambda, DynamoDB and API gateway</li>
+                  <li>Frontend consist of S3- to store a static content and CloudFront- to implement HTTPS and OAI </li>
+                  <li>Backend provides website visitor counter and comprises API gateway, Lambda function and DynamoDB</li>
+                  <li>Automated the entire backend using AWS Serverless Application Model (SAM)</li>
+                  <li>Created CI/CD pipeline with GitHub actions</li>
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Automated deployment of highly available infrastructure for Java based web application on AWS using Terraform</h3>
+                  <li>Configured Terraform state for the infrastructure on Amazon S3</li>
+                  <li>Deployed VPC using Terraform modules</li>
+                  <li>Launched frontend and backend services in private subnets and only web facing ALB in public subnet</li>
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Deployed highly available Web Application using Amazon Elastic Beanstalk, Amazon MQ, Elastic Cache and Amazon RDS</h3>
+                  <li>Created custom VPC with 3x Public subnets and 3x private subnets</li>
+                  <li>Provisioned Multi-AZ MySQL using RDS service, 2xnode Memcached cluster using Elastic Cache, Active/Standby ActiveMq message broker using Amazon MQ service in private subnets of custom VPC </li>
+                  <li>Using Elastic Beanstalk deployed ALB and tomcat ec2 instances in Auto Scaling Group (ASG)</li>
+                  <li>Uploaded build artificact into Elastic Beanstalk environment</li>
+                  <li>Added Elastic Beanstalk environment end point as CNAME in the domain provider dns setting to divert the traffic to ALB, So, that users can use meaningful URL to reach our application. And update the same URL in Cloud Front to be distributed using CDN</li>
+   
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Provisioned a Web application stack on AWS using EC2</h3>
+                  <li>Deployed Web application using Amazon EC2 instances, Route53, Application Load balancer (ALB) and Amazon Certificate Manager (ACM)</li>
+                  <li>Backend consists of RabbitMQ, Memcached, Mariadb and frontend consists of Tomcat instance. Deployed Tomcat, RabbitMQ, Memcached, Mariadb instances with user-data scripts (bash).</li>
+                  <li>Created a private hosted zone in Route53 to map the names of backend services to ip address of the instances so that frontend can interact with backend services  </li>
+                  <li>Assigned appropriate IAM role to Tomcat instance to access the build artifact from s3</li>
+                  <li>Configured Application Load Balancer (ALB) with HTTPS using certificate from Amazon Certificate Manager (ACM) and then mapped ALB endpoint to custom domain name</li>
+               
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+   
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Certifications</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Certified Kubernetes Application Developer(CKAD)</h3>
+                  <p class="info"><em class="date">February 2021</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Certified Kubernetes Adminitsrator(CKA)</h3>
+                  <p class="info"><em class="date">February 2021</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Docker Certified Associate(DCA)</h3>
+                  <p class="info"><em class="date">March 2021</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Terraform Certified Associate</h3>
+                  <p class="info"><em class="date">November 2020</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Aviatrix Certified Engineer – Multi-Cloud Network Associate</h3>
+                  <p class="info"><em class="date">August 2020</em></p>
+
+               </div>
+            </div> <!-- item end -->
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>AWS Certified SysOps Administrator-Associate</h3>
+                  <p class="info"><em class="date">October 2020</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>AWS Certified Developer –Associate</h3>
+                  <p class="info"><em class="date">September 2020</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>AWS Certified Solutions Architect-Associate</h3>
+                  <p class="info"><em class="date">August 2020</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>AWS Certified Cloud Practitioner</h3>
+                  <p class="info"><em class="date">June 2020</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Master of Science in DSP for Multimedia Communications</h3>
+                  <p class="info">University Of Westminster, London, United Kingdom <span>&bull;</span> <em class="date">2008</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Batchelor of Technology in Electronics and Communication Engineering</h3>
+                  <p class="info">Jawaharlal Nehru Technological University, India <span>&bull;</span> <em class="date">2006</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+            
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+      <!-- Education
+      ----------------------------------------------- -->
+      
+
+      
+
+   </section> <!-- Resume Section End-->
+
+   
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="https://www.linkedin.com/in/isak-mohammed-10251211b/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/isak-mohammed"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://isakmohammed.hashnode.dev"><i class="fa fa-external-link"></i></a></li>
+               <li><a href="https://twitter.com/MOHAMMADISAK"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <a href="https://www.styleshout.com/free-templates/ceevee/"> Template by CeeVee </a>
+                
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>
